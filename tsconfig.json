@@ -12,11 +12,15 @@
     "paths": {
       "@/*": ["*"]
     },
+    
     "plugins": [
       {
         "transform": "typescript-transform-paths"
       }
-    ]
+    ],
+    "lib": [
+      "es5", "es6", "dom", "dom.iterable"
+  ]
   },
   "include": ["src", "tests"]
 }

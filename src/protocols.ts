@@ -19,7 +19,7 @@ export type AddressEnrollment = {
   cidade: string,
   uf: string,
   error?: string
-}
+};
 
 export type RequestError = {
   status: number,
@@ -27,4 +27,19 @@ export type RequestError = {
   statusText: string,
   name: string,
   message: string,
+};
+
+export type PaymentInput = {
+  ticketId: number;
+  cardData: {
+    issuer: string;
+    number: number;
+    name: string;
+    expirationDate: Date;
+    cvv: number;
+  };
+};
+
+export type TicketsInput = {
+  ticketTypeId: number
 };
